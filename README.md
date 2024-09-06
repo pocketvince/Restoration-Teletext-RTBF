@@ -4,8 +4,6 @@ This project aims to restore and preserve the teletext history of RTBF.
 
 By archiving this legacy content, the goal is to save a valuable piece of broadcasting history for future reference and research.
 
-![Alt text](https://github.com/pocketvince/Restoration-Teletext-RTBF/blob/main/picture.gif?raw=true "todo")
-
 ## Description
 On 12/02/2024, RTBF decided to discontinue its teletext service.
 
@@ -26,11 +24,13 @@ Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 ![Alt text](https://github.com/pocketvince/Restoration-Teletext-RTBF/blob/main/map_teletext.png?raw=true "todo")
 
 ## Todolist
-❌ Write python code with beautifulsoup to automate export
+⌛ Write python code with beautifulsoup to automate export
 
 ❌ Write a script for image cleaning and upscaling
 
-❌ Make an image map and search for missing or incorrect files
+✔️ Create a script to generate an image map
+
+❌ Search for missing or incorrect files
 
 ❌ Visualisation script
 
