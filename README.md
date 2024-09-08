@@ -19,12 +19,19 @@ My goal now is to extract as many screenshots as possible, enhance them, and rec
 
 Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 
+## Last Update
+20240908: The script works and doesn't seem to return any errors, it's currently running on my laptop, my vps, my raspberry pi and on 2 old 3G phones, the archives are filling up quite quickly.
+
+20240909: I've set up a small website to share the archives with updates of the image map to have a vision of what needs to be completed, and the image archives, I guess within a few weeks I'll have enough data to start the clean and visualization part.
+
 ## Status
 
-![Alt text](https://github.com/pocketvince/Restoration-Teletext-RTBF/blob/main/map_teletext.png?raw=true "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png "todo")
 
 ## Todolist
-⌛ Write python code with beautifulsoup to automate export
+✔️ Write python code with beautifulsoup to automate export
 
 ❌ Write a script for image cleaning and upscaling
 
