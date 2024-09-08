@@ -4,6 +4,8 @@ This project aims to restore and preserve the teletext history of RTBF.
 
 By archiving this legacy content, the goal is to save a valuable piece of broadcasting history for future reference and research.
 
+Watch the evolution of the map and download the archives via https://teletext.pocketvince.com
+
 ## Description
 On 12/02/2024, RTBF decided to discontinue its teletext service.
 
