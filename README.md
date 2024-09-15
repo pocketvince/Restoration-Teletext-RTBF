@@ -31,9 +31,9 @@ During creation it was noticed that some images have the wrong date, this is rel
 
 ## Status
 
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png?1 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png?1 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png?1 "todo")
 
 ## Todolist
 ✔️ Write python code with beautifulsoup to automate export
