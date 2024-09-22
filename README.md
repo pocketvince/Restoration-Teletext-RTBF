@@ -22,12 +22,29 @@ My goal now is to extract as many screenshots as possible, enhance them, and rec
 Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 
 ## Last Update
-20240915: A visual part has been added on the site which allows navigation between pages, sub-pages and date.
+
+### 20240922:
+The python script exported everything linked to the https://www.rtbf.be/services/teletexte/ link, other URLs need to be scanned, but given the number of URLs, this part will probably be done manually (to avoid spending more time scripting than doing the work), the reason being that over time the rtbf switched to a javascript solution which prevented the wayback machine from retrieving all the images from:
+
+http://ds.static.rtbf.be/teletext/
+
+https://static-misc.rtbf.be/teletext/
+
+https://ds1.static.rtbf.be/teletext/
+
+http://ds1.ds.static.rtbf.be/teletext/
+
+http://old.rtbf.be/services/
+
+### 20240915:
+A visual part has been added on the site which allows navigation between pages, sub-pages and date.
 During creation it was noticed that some images have the wrong date, this is related to the fact that the capture keeps the initial date, but the wayback machine seems to return the same images for different date, a manual cleaning will have to be done in the future :)
 
-20240909: I've set up a small website to share the archives with updates of the image map to have a vision of what needs to be completed, and the image archives, I guess within a few weeks I'll have enough data to start the clean and visualization part.
+### 20240909:
+I've set up a small website to share the archives with updates of the image map to have a vision of what needs to be completed, and the image archives, I guess within a few weeks I'll have enough data to start the clean and visualization part.
 
-20240908: The script works and doesn't seem to return any errors, it's currently running on my laptop, my vps, my raspberry pi and on 2 old 3G phones, the archives are filling up quite quickly.
+### 20240908:
+The script works and doesn't seem to return any errors, it's currently running on my laptop, my vps, my raspberry pi and on 2 old 3G phones, the archives are filling up quite quickly.
 
 ## Status
 
