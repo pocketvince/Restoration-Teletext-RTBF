@@ -53,9 +53,9 @@ The script works and doesn't seem to return any errors, it's currently running o
 
 ## Status
 
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png?1 "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png?1 "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png?1 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png?2 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png?2 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png?2 "todo")
 
 ## Todolist
 ✔️ Write python code with beautifulsoup to automate export
