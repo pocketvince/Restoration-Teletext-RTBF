@@ -6,6 +6,8 @@ By archiving this legacy content, the goal is to save a valuable piece of broadc
 
 Watch the evolution of the map and download the archives via https://teletext.pocketvince.com
 
+Currently contains more than 2500 pages!
+
 ## Description
 On 12/02/2024, RTBF decided to discontinue its teletext service.
 
@@ -22,6 +24,9 @@ My goal now is to extract as many screenshots as possible, enhance them, and rec
 Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 
 ## Last Update
+### 20240924:
+I think all the exportable pages have been successfully downloaded, it was also possible to add a part of 2024 containing "the end of teletext" message, thanks to the dandumontp archives ( https://www.journaldulapin.com/2024/02/12/teletexte-rtbf/ ).
+A final check needs to be made to ensure that nothing is missing, and then we can try to improve the images.
 
 ### 20240922:
 The python script exported everything linked to the https://www.rtbf.be/services/teletexte/ link, other URLs need to be scanned, but given the number of URLs, this part will probably be done manually (to avoid spending more time scripting than doing the work), the reason being that over time the rtbf switched to a javascript solution which prevented the wayback machine from retrieving all the images from:
@@ -59,7 +64,7 @@ The script works and doesn't seem to return any errors, it's currently running o
 
 ✔️ Create a script to generate an image map
 
-❌ Search for missing or incorrect files
+⌛ Search for missing or incorrect files
 
 ✔️ Visualisation script
 
@@ -67,6 +72,16 @@ The script works and doesn't seem to return any errors, it's currently running o
 
 Readme generator: https://www.makeareadme.com/
 
-http://wayback.archive.org/
+http://ds.static.rtbf.be/teletext/ via wayback.archive.org
+
+https://static-misc.rtbf.be/teletext/ via wayback.archive.org
+
+https://ds1.static.rtbf.be/teletext/ via wayback.archive.org
+
+http://ds1.ds.static.rtbf.be/teletext/ via wayback.archive.org
 
 https://www.rtbf.be/article/la-fin-d-une-epoque-le-teletexte-a-la-rtbf-c-est-termine-sauf-pour-les-sous-titres-11325912
+
+https://www.journaldulapin.com/2024/02/12/teletexte-rtbf/
+
+https://x.com/a_libotte/status/1837380993113903437
