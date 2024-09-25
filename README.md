@@ -13,8 +13,6 @@ On 12/02/2024, RTBF decided to discontinue its teletext service.
 
 In the past, RTBF teletext offered access to subtitles, news, sports updates, weather,... Making it a key information source before the internet.
 
-I first encountered teletext in the late 90's.
-
 My goal now is to extract as many screenshots as possible, enhance them, and recreate a snapshot of the past.
 
 Teletext evolved over the years, and I’ll keep updating the project on GitHub.
