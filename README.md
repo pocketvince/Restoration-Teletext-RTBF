@@ -19,11 +19,12 @@ Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 
 ## Setup
 ```shell
-pip3 install install requests beautifulsoup4 Pillow
+pip3 install requests beautifulsoup4 Pillow numpy opencv-python-headless tqdm
 apt-get install curl jq
 ```
 
 ## Usage
+### Extractor_teletext.py
 Images will be systematically exported to the teletexte_images folder in yearmonthday_page_subpage.gif format.
 Export will not take place if:
 
@@ -39,7 +40,7 @@ You can use the first python script to export page by page, sub page by sub page
 ```shell
 python3 extractor_teletext.py YYYYMMDD
 ```
-
+### Missing.py
 If you prefer to search a specific page/subpage, you can run missing.py
 It will keep the same rules for saving an image except that it will search for specific pages for a specific date that you can insert in a text file named id.txt, in the format “yearmonthday page subpage”.
 If you're not looking for a specific subpage, enter 1 by default (i.e. “yearmonthday page 1”).
@@ -48,7 +49,7 @@ To run the script:
 ```shell
 python3 missing.py
 ```
-
+### Missing.sh
 If you need help generating timestamp ids, you can run the shell script missing.sh with the page number (and subpage if necessary) as argument, and save the result in the file id.txt, example:
 ```shell
 ./missing.sh 128 5
@@ -67,9 +68,37 @@ Example output:
 
 Then running missing.py will search for all queries stored in id.txt.
 
+### Resize.py
+By executing the script, it will retrieve all the images from the teletexte_images folder (previously exported), process them and place the new images in the upscaled_images folder.
+
+In terms of processing, the script will: 
+
+• Upscale images
+
+• Reduce saturation
+
+• Color enhancement
+
+```shell
+python3 resize.py
+```
+
 The project is open and collaborative, if you have sources on your side, don't hesitate to share them.
 
 ## Last Update
+### 20240926:
+The script is currently running (331/999), but cleaning it up while it's running is an error, as it re-downloads the duplicates.
+
+In the meantime, I've made the resize.py script, which allows you to:
+
+• Upscale images
+
+• Reduce saturation
+
+• Color enhancement
+
+The web version has also been updated to take the enhanced png version, and no longer the small gif format.
+
 ### 20240925:
 I've rewritten an equivalent script to look for missing pages, the script has a shell part where you can specify the page and subpage you're looking for, and it will return all the timestamps in a text file (id.txt).
 And then by executing missing.py it will do the job based on the registered ids.
@@ -106,14 +135,14 @@ The script works and doesn't seem to return any errors, it's currently running o
 
 ## Status
 
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png?2 "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png?2 "todo")
-![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png?2 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_yearly_black.png?3 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_monthly_black.png?3 "todo")
+![Alt text](https://teletext.pocketvince.com/teletexte_pages_daily_black.png?3 "todo")
 
 ## Todolist
 ✔️ Write python code with beautifulsoup to automate export
 
-❌ Write a script for image cleaning and upscaling
+✔️ Write a script for image cleaning and upscaling
 
 ✔️ Create a script to generate an image map
 
