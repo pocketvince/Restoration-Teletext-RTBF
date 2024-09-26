@@ -45,8 +45,8 @@ body {
     color: yellow;
 }
 .title {
-    background-color: mediumblue;
-    color: yellow;
+    background-color: navy;
+    color: white;
     padding: 1px;
     text-align: center;
     font-size: 18px;
@@ -67,7 +67,7 @@ body {
     letter-spacing: 1px;
 }
 .footer {
-    background-color: red;
+    background-color: crimson;
     padding: 10px;
     text-align: center;
     color: yellow;
@@ -98,19 +98,26 @@ body {
 }
 .selector-container {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
 .selector-group {
-    display: flex-start;
+    display: flex;
     align-items: center;
     margin-bottom: 0;
 }
-.selector-group p {
+
+.selector-group span {
     margin-right: 10px;
     font-size: 18px;
     width: 80px;
+}
+
+.section-title {
+    margin-bottom: 10px;
 }
 select {
     background-color: #333;
@@ -134,8 +141,8 @@ select {
 }
 .download-button a {
     display: inline-block;
-    background-color: red;
-    color: yellow;
+    background-color: navy;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -170,25 +177,29 @@ select {
 
     <p class="section-title">Description</p>
     <div class="content">
-        <p style="color:yellow;">The goal of this project is to restore RTBF teletext for preservation purposes, and to recreate a snapshot of the past.<br>Follow the restoration project via my github project, or you can follow the restoration progress below.</p>
+        <p style="color:yellow;">The goal of this project is to restore RTBF teletext for preservation purposes, and to recreate a snapshot of the past, follow the project on <a href="https://github.com/pocketvince/Restoration-Teletext-RTBF">Github</a></p>
     </div>
 
     <div class="download-button">
-        <a href="teletexte_images.zip" download>DOWNLOAD LAST ARCHIVE</a>
+        <a href="teletexte_upscaled.zip" download>DOWNLOAD UPSCALED FILES</a>
+        <a href="teletexte_original.zip" download>DOWNLOAD ORIGINAL FILES</a>
     </div>
 
-    <p class="section-title">Teletext Viewer</p>
-    <div class="selector-container">
-        <div class="selector-group">
-            <span style="color:yellow">Page:&nbsp;&nbsp;&nbsp;&nbsp;<select id="page" onchange="updateDropdowns('page')"></select>
-        </div>
-        <div class="selector-group">
-            <span style="color:green">Subpage:&nbsp;<select id="subpage" onchange="updateDropdowns('subpage')"></select>
-        </div>
-        <div class="selector-group">
-            <span style="color:red">Date:&nbsp;&nbsp;&nbsp;&nbsp;<select id="date" onchange="updateDropdowns('date')"></select>
-        </div>
+<p class="section-title">Teletext Viewer</p>
+<div class="selector-container">
+    <div class="selector-group">
+        <span style="color:yellow">Page:</span>
+        <select id="page" onchange="updateDropdowns('page')"></select>
     </div>
+    <div class="selector-group">
+        <span style="color:green">Subpage:</span>
+        <select id="subpage" onchange="updateDropdowns('subpage')"></select>
+    </div>
+    <div class="selector-group">
+        <span style="color:red">Date:</span>
+        <select id="date" onchange="updateDropdowns('date')"></select>
+    </div>
+</div>
 
     <div id="image-container">
         <h2 id="page-info"></h2>
@@ -206,7 +217,7 @@ select {
     <div class="links">
         <div class="link red"><a href="https://www.rtbf.be/article/la-fin-d-une-epoque-le-teletexte-a-la-rtbf-c-est-termine-sauf-pour-les-sous-titres-11325912">RTBF</a></div>
         <div class="link green"><a href="https://pocketvince.com">Pocketvince</a></div>
-        <div class="link yellow"><a href="https://github.com/pocketvince/Restoration-Teletext-RTBF">Project</a></div>
+        <div class="link yellow"><a href="https://github.com/pocketvince/Restoration-Teletext-RTBF">Github</a></div>
         <div class="link cyan"><a href="https://en.wikipedia.org/wiki/Teletext">Wikipedia</a></div>
     </div>
 </div>
@@ -217,7 +228,7 @@ $images = [];
 
 if ($handle = opendir($imageDirectory)) {
     while (false !== ($entry = readdir($handle))) {
-        if (preg_match('/(\\d{8})_(\\d{3})_(\\d{2})\\.gif$/', $entry, $matches)) {
+        if (preg_match('/(\\d{8})_(\\d{3})_(\\d{2})\\.png$/', $entry, $matches)) {
             $date = $matches[1];   // Date from the filename
             $page = $matches[2];   // Page from the filename
             $subpage = $matches[3]; // Subpage from the filename
