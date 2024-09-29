@@ -85,7 +85,45 @@ python3 resize.py
 
 The project is open and collaborative, if you have sources on your side, don't hesitate to share them.
 
+### Black Map
+The “Black Map” scripts generate a map that provides a visualization based on the pages available vs date. 
+Year, year month or day level.
+You can see an example in the “status” section
+To run it, simply launch the appropriate version:
+
+```shell
+python3 black-map-daily.py
+python3 black-map-monthly.py
+python3 black-map-yearly.py
+```
+
+### Duplicate.py
+The script will scan the teletexte_images folder and move duplicate files to “duplicate”.
+
+The script works on a pixel-perfect basis; if the images are a little different, they are ignored.
+
+Placement in the “duplicate” folder will be filed in folders in page_subpage format for easy verification.
+
+```shell
+python3 duplicate.py
+```
+
 ## Last Update
+### 20240929:
+The missing python script is progressing well and has been able to continue retrieving images, for the moment we are on 739/999.
+
+This currently totals over 8500 images, but contains duplicates.
+
+I've already written the cleanup script (duplicate.py) that will clean everything up.
+
+As already noted in previous analyses, it seems that some images have not been updated over time, for example:
+
+Page 732 sub-page 1 returns the same image for the dates: 20030321, 20040904, 20010828, 20010417, 20001215, 20001014, 20000615, 20000604, 20000503, 20000422,...
+
+The online version published at https://teletext.pocketvince.com displays unduplicated versions (for greater fluidity and performance), but the complete archives can be downloaded.
+
+I presume the script will need to run for part of the week, my vacation is soon over, so as soon as I have a minute, I'll post the rest (:
+
 ### 20240926:
 The script is currently running (331/999), but cleaning it up while it's running is an error, as it re-downloads the duplicates.
 
@@ -150,7 +188,7 @@ The script works and doesn't seem to return any errors, it's currently running o
 
 ✔️ Visualisation script
 
-❌ Elimination of duplicates for multiple dates in the same period
+✔️ Elimination of duplicates for multiple dates in the same period (solved via duplicate.py)
 
 ## Contributing
 
