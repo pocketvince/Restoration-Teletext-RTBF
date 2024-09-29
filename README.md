@@ -19,7 +19,7 @@ Teletext evolved over the years, and I’ll keep updating the project on GitHub.
 
 ## Setup
 ```shell
-pip3 install requests beautifulsoup4 Pillow numpy opencv-python-headless tqdm
+pip3 install pandas requests matplotlib beautifulsoup4 Pillow numpy opencv-python-headless tqdm
 apt-get install curl jq
 ```
 
